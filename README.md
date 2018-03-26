@@ -1,6 +1,6 @@
 # Simulations on Supersingular Isogeny Graph
 
-This repository includes various simulations written in Sage for supersingular isogeny graphs to estimate the distribution of public and secret keys of SIDH/SIKE schemes. The code is partially based on [Erik Thormarker's similar work](https://github.com/eriktho/thesis-sage-code).
+This repository includes various simulations written in Sage for supersingular isogeny graphs to estimate the distribution of `j(E_A)`, `j(E_B)` and `j(E_AB)` of SIDH/SIKE schemes. The code is partially based on [Erik Thormarker's similar work](https://github.com/eriktho/thesis-sage-code).
 
 ## License
 
