@@ -16,5 +16,5 @@ with the following additional clauses:
   their primary identity, that wish is to be respected by all contributors. 
 
 
-If you have questions or comments, please feel free to email the author. For feature requests, suggestions, and bug reports, please [open an issue on this Github repository](https://github.com/etairi/vscode-magma/issues) (or, send an email to the author). Patches are also welcomed as [pull requests on this GitHub repository](https://github.com/etairi/vscode-magma/pulls), as well as by
+If you have questions or comments, please feel free to email the author. For feature requests, suggestions, and bug reports, please [open an issue on this Github repository](https://github.com/etairi/isogeny-graphs/issues) (or, send an email to the author). Patches are also welcomed as [pull requests on this GitHub repository](https://github.com/etairi/isogeny-graphs/pulls), as well as by
 email.
