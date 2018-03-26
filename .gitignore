@@ -99,3 +99,15 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# VS Code
+.vscode/
+
+# Modular polynomials directory
+modpolys/
+
+# Output directory
+output/
+
+# Plots directory
+plots/
