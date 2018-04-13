@@ -2,7 +2,7 @@
 
 This repository includes various simulations written in Sage for supersingular isogeny graphs to estimate the distributions of `j(E_A)`, `j(E_B)` and `j(E_AB)` of SIDH/SIKE schemes. The code is partially based on [Erik Thormarker's similar work](https://github.com/eriktho/thesis-sage-code).
 
-In order to run the simulation scripts, first of all you need to build and link the scipts using the make command:
+In order to run the simulation scripts, first of all you need to build and link the scripts using the make command:
 
 > make
 
