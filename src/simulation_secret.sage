@@ -1,4 +1,4 @@
-# Import Sage
+# Import Sage and other libs
 from sage.all import *
 from helpers import *
 from isogeny import *
@@ -9,7 +9,7 @@ from walk import *
 from collections import defaultdict
 from operator import itemgetter
 
-LOGFILE = "simulation_public.log"
+LOGFILE = "simulation_secret.log"
 OUTPUT_FILE = "simulation"
 OUTPUT_DIR = "output"
 FIELDS = ["eA", "eB", "f", "prime", "theoretical", "expected", "simulation"]
@@ -137,8 +137,10 @@ def run_simulation(name, iters):
     out_file = OUTPUT_FILE + simul_name + ".csv"
     write_csv(OUTPUT_DIR, out_file, FIELDS, results)
 
+# Generate random primes.
 primes = generate_primes()
+# Filter the primes.
 primes = filter_primes(primes)
-
+# We run the simulation for both Alice and Bob.
 for name in names:
     run_simulation(name, ITER)

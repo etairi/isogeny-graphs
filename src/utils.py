@@ -14,6 +14,17 @@ def filter_nodes(dic):
     filtered = {k: v for k, v in dic.items() if v > 1}
     return filtered
 
+def write_data(output_dir, output_file, data):
+    print "\nWriting the results to a data file (%s)..." % output_file
+    output_path = os.path.join(os.path.abspath(".."), output_dir)
+    create_output_dir(output_path)
+
+    f = open(os.path.join(output_path, output_file), "w")
+    for entry in data.values():
+        f.write(str(entry)+ "\n")
+    f.close()
+    print "Writing complete!"
+
 def write_csv(output_dir, output_file, fields, data):
     print "\n===================================================================="
     print "Writing the results to a CSV file (%s)..." % output_file

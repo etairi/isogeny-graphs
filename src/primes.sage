@@ -50,7 +50,7 @@ def generate_primes():
     print "\nPrimes found: %s" % str(len(primes))
     return primes
 
-def filter_primes(primes):
+def filter_primes(primes, count = None):
     print "===================================================================="
     print "Filtering primes..."
 
@@ -71,6 +71,10 @@ def filter_primes(primes):
     # Sample MAX_PRIMES amount of primes, and sort them in ascending order according to the prime.
     filtered = random.sample(filtered, MAX_PRIMES) if len(filtered) > MAX_PRIMES else filtered
     filtered = sorted(filtered, key = itemgetter(3))
+
+    # If count is not none, get the first count amount of filtered primes.
+    if count:
+        filtered = filtered[:count]
 
     print "Done filtering primes."
     print "\nPrimes after filtering: %s" % str(len(filtered))

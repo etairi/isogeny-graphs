@@ -1,6 +1,22 @@
-# Simulations on Supersingular Isogeny Graph
+# Simulations on Supersingular Isogeny Graphs
 
-This repository includes various simulations written in Sage for supersingular isogeny graphs to estimate the distribution of `j(E_A)`, `j(E_B)` and `j(E_AB)` of SIDH/SIKE schemes. The code is partially based on [Erik Thormarker's similar work](https://github.com/eriktho/thesis-sage-code).
+This repository includes various simulations written in Sage for supersingular isogeny graphs to estimate the distributions of `j(E_A)`, `j(E_B)` and `j(E_AB)` of SIDH/SIKE schemes. The code is partially based on [Erik Thormarker's similar work](https://github.com/eriktho/thesis-sage-code).
+
+In order to run the simulation scripts, first of all you need to build and link the scipts using the make command:
+
+> make
+
+Then, you can run the script  
+
+> sage simulation_secret.sage
+
+which runs the simulations to estimate the distributions of `j(E_A)` and `j(E_B)`, or the script
+
+> sage simulation_shared.sage
+
+which runs the simulation to estiamte the distribution of `j(E_AB)`.
+
+The file `plot.R` reads the ouput of the simulations, plots the results and exports the plots as `.pdf` files.
 
 ## License
 

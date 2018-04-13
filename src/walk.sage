@@ -1,4 +1,4 @@
-# Import Sage
+# Import Sage and other libs
 from sage.all import *
 from helpers import *
 from isogeny import PointIsogeny
@@ -87,4 +87,4 @@ def walk_3_isogeny(E_i, j, level, prev_j, two_max_level, three_max_level, end_no
     elif sim_index == 1:
         walk_2_isogeny(E_i, j, 0, "", two_max_level, three_max_level, end_nodes, sim_index)
     else:
-        end_nodes += 1
+        end_nodes[j] += 1
